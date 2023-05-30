@@ -1,13 +1,127 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
+    <meta name="description"
+        content="Поможем Вам приобрести банковскую карту, оформленную на чужое имя. В гривне и валюте">
+
+    <title>B.Cards</title>
+
+    <!-- Фавиконы и иконки сайта -->
+    <link rel="apple-touch-icon" sizes="57x57" href="src/images/favicon/apple-touch-icon/apple-touch-icon-57x57.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="src/images/favicon/apple-touch-icon/apple-touch-icon-60x60.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="src/images/favicon/apple-touch-icon/apple-touch-icon-72x72.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="src/images/favicon/apple-touch-icon/apple-touch-icon-76x76.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="src/images/favicon/apple-touch-icon/apple-touch-icon-114x114.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="src/images/favicon/apple-touch-icon/apple-touch-icon-120x120.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="src/images/favicon/apple-touch-icon/apple-touch-icon-144x144.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="src/images/favicon/apple-touch-icon/apple-touch-icon-152x152.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="src/images/favicon/apple-touch-icon/apple-touch-icon-180x180.png"
+        data-mce-href="src/images/favicon/apple-touch-icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="src/images/favicon/favicon-32x32.png" sizes="32x32"
+        data-mce-href="src/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" href="src/images/favicon/android-chrome-192x192.png" sizes="192x192"
+        data-mce-href="src/images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" href="src/images/favicon/favicon-96x96.png" sizes="96x96"
+        data-mce-href="src/images/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" href="src/images/favicon/favicon-16x16.png" sizes="16x16"
+        data-mce-href="src/images/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#7000FF">
+    <meta name="msapplication-TileImage" content="src/images/favicon/mstile-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#7000FF">
+
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#7000FF">
+
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="icon" type="image/png" href="src/images/favicon/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/fonts/NeueMachina/stylesheet.css">
+    <link rel="stylesheet" href="src/fonts/Gilroy/stylesheet.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="src/images/logo.svg" alt="B.Cards" width="140" height="62.26">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Как выглядит процесс</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Почему мы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                    </ul>
+                    <a class="tel-btn" href="tel:+380999999999">
+                        <button class="btn">
+                            <span>Консультация</span>
+                            <div class="telephone-icon"></div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="section first-section">
+            <div class="container">
+                <div class="bg-block"></div>
+                <div class="container-content">
+                    <div class="content-title">Купить карты <br>банков Украины</div>
+                    <div class="content-subtitle">
+                        <div class="marker"></div>
+                        <div class="subtitle">
+                            Поможем Вам приобрести банковскую карту, оформленную <br>на чужое имя. В
+                            гривне и валюте
+                        </div>
+                    </div>
+                    <a class="content-btn" href="#">
+                        <button class="btn">
+                            <span>Подробнее</span>
+                            <div class="arrow-icon"></div>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
