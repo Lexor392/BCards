@@ -246,20 +246,57 @@ body {
 
         .second-section {
             padding-top: 118px;
+            height: 1128px;
+
             .container {
+                position: relative;
+
                 .content-title {
+                    position: relative;
+                    z-index: 1;
+                    width: 100%;
+
                     .title {
-                        font-family: 'Neue Machina';
-                        font-style: normal;
-                        font-weight: 800;
-                        font-size: 71px;
-                        line-height: 115%;
-                        background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
-                        -webkit-background-clip: text;
-                        -webkit-text-fill-color: transparent;
-                        background-clip: text;
-                        text-fill-color: transparent;
-                        margin-bottom: 17px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+                        span {
+                            font-family: 'Neue Machina';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 71px;
+                            line-height: 115%;
+                            background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+                            margin-bottom: 17px;
+                        }
+
+                        .title-element {
+                            position: absolute;
+                            right: -210px;
+                            display: flex;
+                            align-items: center;
+
+                            .circle {
+                                position: relative;
+                                z-index: 1;
+                                border-radius: 100%;
+                                width: 20px;
+                                height: 20px;
+                                margin-right: -10px;
+                                background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                            }
+
+                            .line {
+                                width: 537px;
+                                height: 8px;
+                                background: #B301FF;
+                            }
+                        }
                     }
 
                     .subtitle {
@@ -271,6 +308,292 @@ body {
                         color: #6A6A6A;
                         margin-bottom: 62px;
                     }
+                }
+
+                .bg-block {
+                    position: absolute;
+                    z-index: 0;
+                    top: 296px;
+                    left: -210px;
+                    width: 1740px;
+                    height: 158px;
+                    background: url(../images/second-section-bg.png) no-repeat left top;
+                }
+
+                .block-content {
+                    display: flex;
+                    justify-content: center;
+
+                    .block {
+                        display: grid;
+                        justify-content: center;
+                        text-align: center;
+                        height: max-content;
+                        margin: 0 19px;
+
+                        .block-circles {
+                            width: 215px;
+                            height: 215px;
+                            margin: 0 auto;
+                            background: url(../images/icons/second-section-number-border.svg)no-repeat center center, #FFFFFF;
+                            box-shadow: 0px 0px 20px #DDDDDD;
+                            border-radius: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            .block-number {
+                                font-family: 'Neue Machina';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 90px;
+                                line-height: 140%;
+                                background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                            }
+                        }
+
+                        .line {
+                            width: 4px;
+                            height: 117px;
+                            margin: 0 auto;
+                            background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                        }
+
+                        .circle {
+                            position: relative;
+                            z-index: 1;
+                            width: 18px;
+                            height: 18px;
+                            margin: 0 auto;
+                            border-radius: 100%;
+                            background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                        }
+
+                        .block-container {
+                            width: max-content;
+                            height: max-content;
+                            padding: 1px;
+                            border-radius: 30px;
+                            margin-top: -9px;
+                            background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+
+                            .block-text {
+                                width: 255px;
+                                height: 310px;
+
+                                background: #FFFFFF;
+                                box-shadow: 0px 0px 20px rgba(181, 181, 181, 0.2);
+                                border-radius: 30px;
+                                padding: 53px 20px;
+
+                                .block-title {
+                                    font-family: 'Neue Machina';
+                                    font-style: normal;
+                                    font-weight: 800;
+                                    font-size: 25px;
+                                    line-height: 100%;
+                                    text-align: center;
+                                    background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+
+                                .block-subtitle {
+                                    font-family: 'Gilroy';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 16px;
+                                    line-height: 160%;
+                                    text-align: center;
+                                    letter-spacing: 0.03em;
+                                    color: #404040;
+                                    margin-top: 16px;
+                                }
+                            }
+                        }
+                    }
+
+                    .block2,
+                    .block4 {
+                        margin-top: 160px;
+                    }
+
+                    .block3 {
+                        .block-container {
+                            .block-text {
+                                height: 346px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .third-section {
+            padding-top: 69px;
+
+            .container {
+                height: 870px;
+                position: relative;
+
+                .bg-block {
+                    position: absolute;
+                    z-index: 0;
+                    left: -320px;
+                    width: 1954.2px;
+                    height: 892.42px;
+                    background: url(../images/third-section-bg.png) no-repeat left top;
+                }
+
+                .content-title {
+                    width: 100%;
+                    display: flex;
+                    justify-content: right;
+                    position: relative;
+                    padding-top: 88px;
+                    z-index: 1;
+
+                    .title {
+                        span {
+                            font-family: 'Neue Machina';
+                            font-style: normal;
+                            font-weight: 800;
+                            font-size: 71px;
+                            line-height: 115%;
+                            background: linear-gradient(266.09deg, #FFFFFF -4.3%, #F1F1F1 108.23%);
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                            background-clip: text;
+                            text-fill-color: transparent;
+
+                        }
+                    }
+                }
+
+                .block-content {
+                    position: relative;
+                    z-index: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+
+                    .block {
+                        width: 620.55px;
+                        display: flex;
+                        align-items: center;
+
+                        .block-text {
+                            margin-left: -60px;
+                            width: 398px;
+
+                            .title {
+                                font-family: 'Neue Machina';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 22px;
+                                line-height: 120%;
+                                background: linear-gradient(266.09deg, #FFFFFF -4.3%, #F1F1F1 108.23%);
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent;
+                                background-clip: text;
+                                text-fill-color: transparent;
+                                margin-bottom: 12px;
+                            }
+
+                            .subtitle {
+                                font-family: 'Gilroy';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 160%;
+                                color: #FFFFFF;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .fourth-section {
+            padding-top: 223px;
+            padding-bottom: 180px;
+
+            .container {
+                position: relative;
+
+                .container-content {
+                    .content-title {
+                        font-family: 'Neue Machina';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 71px;
+                        line-height: 115%;
+                        background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                        margin-bottom: 5px;
+                    }
+
+                    .content-subtitle {
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 160%;
+                        color: #000000;
+                        margin-bottom: 68px;
+                        width: 525px;
+
+                        a {
+                            text-decoration: none;
+                            color: #000000;
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                        }
+                    }
+
+                    a {
+                        text-decoration: none;
+
+                        .btn {
+                            height: 90px;
+                            width: 452px;
+                            border-radius: 10px;
+                            background: url(../images/icons/tg-button-border.svg) no-repeat center,
+                                linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            span {
+                                font-family: 'Neue Machina';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 23px;
+                                line-height: 150%;
+                                text-align: center;
+                                letter-spacing: 0.06em;
+                                color: #FFFFFF;
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+
+                .container-img {
+                    position: absolute;
+                    right: -80px;
+                    top: -130px;
                 }
             }
         }
