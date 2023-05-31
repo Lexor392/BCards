@@ -5,6 +5,7 @@ body {
 }
 
 body {
+    overflow-x: hidden;
 
     .header {
         position: absolute;
@@ -115,7 +116,7 @@ body {
                     height: 718.5px;
                     position: absolute;
                     z-index: 0;
-                    left: -300px;
+                    left: -210px;
                     background: url(../images/first-section-bg.png) no-repeat left top;
                 }
 
@@ -163,6 +164,7 @@ body {
 
                     .content-btn {
                         text-decoration: none;
+
                         .btn {
                             width: 260px;
                             height: 60px;
@@ -210,6 +212,64 @@ body {
                             }
                         }
 
+                    }
+
+                    .btn-down-block {
+                        width: max-content;
+                        height: max-content;
+                        margin: 0 auto;
+                        margin-top: 20px;
+                        border-radius: 100%;
+                        padding: 2px;
+                        background: linear-gradient(359.55deg, #BD00FF -67.98%, #7000FF 94.62%);
+
+                        .btn-down {
+
+
+                            .btn {
+                                width: 84px;
+                                height: 84px;
+                                border-radius: 100%;
+                                background: url(../images/icons/btn-bottom-icon.svg) no-repeat center center, #ffffff;
+                            }
+                        }
+                    }
+                }
+
+                .container-img {
+                    position: absolute;
+                    right: -259px;
+                    top: 98px;
+                }
+            }
+        }
+
+        .second-section {
+            padding-top: 118px;
+            .container {
+                .content-title {
+                    .title {
+                        font-family: 'Neue Machina';
+                        font-style: normal;
+                        font-weight: 800;
+                        font-size: 71px;
+                        line-height: 115%;
+                        background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+                        text-fill-color: transparent;
+                        margin-bottom: 17px;
+                    }
+
+                    .subtitle {
+                        font-family: 'Gilroy';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 140%;
+                        color: #6A6A6A;
+                        margin-bottom: 62px;
                     }
                 }
             }
