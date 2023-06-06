@@ -1,0 +1,91 @@
+/* Скрыть nav-item элементы по умолчанию */
+.body .item-anim {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Показать nav-item элементы с плавной анимацией */
+.body .item-anim.show {
+    opacity: 1;
+}
+
+.item-anim-left,
+.span-anim-left {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-left {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+body .main .second-section .container .content-title {
+    opacity: 0;
+    /* Начальное значение прозрачности блока */
+}
+
+.circle-animate {
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out 1.4s;
+}
+
+.circle-scale-animation {
+    transform: scale(1);
+}
+
+body .main .second-section .container {
+    .bg-block.block-show {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        transition-delay: 0s;
+    }
+
+    .bg-block.block-show.show {
+        opacity: 1;
+    }
+
+    .block-content {
+        .block.block-show {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+            transition-delay: 0s;
+
+            .line.block-show {
+                height: 0px;
+                transition: all 0.5s ease;
+                transition-delay: 0s;
+            }
+
+            .circle.block-show {
+                transform: scale(0);
+                transition: all 0.5s ease;
+                transition-delay: 0s;
+            }
+
+            .block-container.block-show {
+                opacity: 0;
+                transition: all 0.5s ease;
+                transition-delay: 0s;
+            }
+        }
+
+        .block.block-show.show {
+            opacity: 1;
+
+            .line.block-show.show {
+                height: 117px;
+            }
+
+            .circle.block-show.show {
+                transform: scale(1);
+            }
+
+            .block-container.block-show.show {
+                opacity: 1;
+            }
+        }
+    }
+
+}

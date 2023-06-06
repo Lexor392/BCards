@@ -50,6 +50,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <link rel="icon" type="image/png" href="src/images/favicon/favicon.ico">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
@@ -57,9 +58,10 @@
     <link rel="stylesheet" href="src/fonts/Gilroy/stylesheet.css">
     <link rel="stylesheet" href="src/styles/style.css">
 
+    <link rel="stylesheet" href="src/styles/animation-style.css">
 </head>
 
-<body>
+<body class="body">
     <header class="header">
         <nav class="navbar navbar-expand-lg">
             <div class="container container-fluid">
@@ -73,17 +75,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
+                        <li class="nav-item item-anim">
                             <a class="nav-link" href="#second-section">Как выглядит процесс</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Почему мы</a>
+                        <li class="nav-item item-anim">
+                            <a class="nav-link" href="#third-section">Почему мы</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FAQ</a>
+                        <li class="nav-item item-anim">
+                            <a class="nav-link" href="#fifth-section">FAQ</a>
                         </li>
                     </ul>
-                    <a class="tel-btn" href="tel:+380999999999">
+                    <a class="tel-btn item-anim" href="tel:+380999999999">
                         <button class="btn">
                             <span>Консультация</span>
                             <div class="telephone-icon"></div>
@@ -98,15 +100,15 @@
             <div class="container">
                 <div class="bg-block"></div>
                 <div class="container-content">
-                    <div class="content-title">Купить карты <br>банков Украины</div>
-                    <div class="content-subtitle">
+                    <div class="content-title item-anim-left">Купить карты <br>банков Украины</div>
+                    <div class="content-subtitle item-anim-left">
                         <div class="marker"></div>
                         <div class="subtitle">
                             Поможем Вам приобрести банковскую карту, оформленную <br>на чужое имя. В
                             гривне и валюте
                         </div>
                     </div>
-                    <a class="content-btn" href="#">
+                    <a class="content-btn item-anim-left" href="#">
                         <button class="btn">
                             <span>Подробнее</span>
                             <div class="arrow-icon"></div>
@@ -114,20 +116,67 @@
                     </a>
                     <div class="btn-down-block">
                         <a class="btn-down" href="#second-section">
-                            <button class="btn"></button>
+                            <button class="btn">
+                                <svg id="arrow1" width="6" height="1" viewBox="0 0 6 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line opacity="0.2" y1="0.5" x2="6" y2="0.5" stroke="url(#paint0_linear_82_295)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_82_295" x1="6.27553" y1="1" x2="0.0993212"
+                                            y2="3.52989" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#BD00FF" />
+                                            <stop offset="1" stop-color="#7000FF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg id="arrow2" width="20" height="1" viewBox="0 0 20 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line opacity="0.5" y1="0.5" x2="20" y2="0.5" stroke="url(#paint0_linear_82_294)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_82_294" x1="20.9184" y1="1" x2="12.5249"
+                                            y2="12.4605" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#BD00FF" />
+                                            <stop offset="1" stop-color="#7000FF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg id="arrow3" width="30" height="1" viewBox="0 0 30 1" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <line y1="0.5" x2="30" y2="0.5" stroke="url(#paint0_linear_82_293)" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_82_293" x1="31.3777" y1="1" x2="24.4355"
+                                            y2="15.2183" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#BD00FF" />
+                                            <stop offset="1" stop-color="#7000FF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                                <svg id="arrow4" width="36" height="20" viewBox="0 0 36 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.3488 1.25L18 18.8706L33.6512 1.25H2.3488Z"
+                                        stroke="url(#paint0_linear_82_292)" stroke-width="1.5" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_82_292" x1="39.8369" y1="20" x2="-7.72183"
+                                            y2="15.0049" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#BD00FF" />
+                                            <stop offset="1" stop-color="#7000FF" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+
+                            </button>
                         </a>
                     </div>
                 </div>
-                <img src="src/images/first-screen-img.png" alt="" class="container-img">
+                <img src="src/images/first-screen-img.png" alt="" class="container-img item-anim">
             </div>
         </section>
         <section class="section second-section">
             <div class="container">
-                <div class="content-title">
+                <div class="content-title content-title-show">
                     <div id="second-section" class="title">
-                        <span>Как выглядит процесс?</span>
+                        <span class="span-anim-left">Как выглядит процесс?</span>
                         <div class="title-element">
-                            <div class="circle"></div>
+                            <div class="circle circle-animate"></div>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -135,15 +184,15 @@
                         Оформление карты занимает от 7 до 14 дней, в зависимости от конкретного банка!
                     </div>
                 </div>
-                <div class="bg-block"></div>
+                <div class="bg-block block-show"></div>
                 <div class="block-content">
-                    <div class="block block1">
+                    <div class="block block1 block-show">
                         <div class="block-circles">
                             <span class="block-number">01</span>
                         </div>
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="block-container">
+                        <div class="line block-show"></div>
+                        <div class="circle block-show"></div>
+                        <div class="block-container block-show">
                             <div class="block-text">
                                 <div class="block-title">Отправка заявки</div>
                                 <div class="block-subtitle">Вы оставляете заявку<br>
@@ -151,13 +200,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block block2">
+                    <div class="block block2 block-show">
                         <div class="block-circles">
                             <span class="block-number">02</span>
                         </div>
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="block-container">
+                        <div class="line block-show"></div>
+                        <div class="circle block-show"></div>
+                        <div class="block-container block-show">
                             <div class="block-text">
                                 <div class="block-title">Оформление карты</div>
                                 <div class="block-subtitle">Вы оплачиваете 50%<br>
@@ -165,13 +214,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block block3">
+                    <div class="block block3 block-show">
                         <div class="block-circles">
                             <span class="block-number">03</span>
                         </div>
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="block-container">
+                        <div class="line block-show"></div>
+                        <div class="circle block-show"></div>
+                        <div class="block-container block-show">
                             <div class="block-text">
                                 <div class="block-title">Внесение предоплаты</div>
                                 <div class="block-subtitle">Оформляем карту<br>
@@ -181,13 +230,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block block4">
+                    <div class="block block4 block-show">
                         <div class="block-circles">
                             <span class="block-number">04</span>
                         </div>
-                        <div class="line"></div>
-                        <div class="circle"></div>
-                        <div class="block-container">
+                        <div class="line block-show"></div>
+                        <div class="circle block-show"></div>
+                        <div class="block-container block-show">
                             <div class="block-text">
                                 <div class="block-title">Отправка Новой Почтой</div>
                                 <div class="block-subtitle">Осуществляем отправку<br>
@@ -200,7 +249,7 @@
             </div>
         </section>
         <section class="section third-section">
-            <div class="container">
+            <div id="third-section" class="container">
                 <div class="bg-block"></div>
                 <div class="content-title">
                     <div id="second-section" class="title">
@@ -257,20 +306,169 @@
                     <a href="#">
                         <button class="btn">
                             <span>Перейти в Telegram</span>
-                            <img src="src/images/icons/tg-icon.svg" alt="Перейти в Telegram">
+                            <div class="btn-icon"></div>
                         </button>
                     </a>
                 </div>
                 <img src="src/images/fourth-screen-img.png" alt="" class="container-img">
             </div>
         </section>
+        <section class="section fifth-section">
+            <div class="container">
+                <div class="bg-block"></div>
+                <div class="content-title">
+                    <div id="fifth-section" class="title">
+                        <span>Ответы на частые вопросы</span>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <span>Карты каких банков вы можете оформить? Что входит <br>в комплект заказа?</span>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="false"
+                                aria-controls="collapseOne"></button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <span>Предоставляете ли вы какие-то гарантии на карты? <br>Если да, то на какой срок?</span>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false"
+                                aria-controls="collapseTwo"></button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
+                                until the collapse plugin adds the appropriate classes that we use to style each
+                                element. These classes control the overall appearance, as well as the showing and hiding
+                                via CSS transitions. You can modify any of this with custom CSS or overriding our
+                                default variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <span>Могу ли я оформить валютную карту и отличается <br>ли процесс её оформления?</span>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false"
+                                aria-controls="collapseThree"></button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <span>Могу ли я открыть виртуальную карту, если мне <br>не нужен пластиковый вариант?</span>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false"
+                                aria-controls="collapseFour"></button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <span>Берёте ли вы предоплату за оформление заказа? <br>Можно ли оплатить
+                                криптовалютой?</span>
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false"
+                                aria-controls="collapseFive"></button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until
+                                the collapse plugin adds the appropriate classes that we use to style each element.
+                                These classes control the overall appearance, as well as the showing and hiding via CSS
+                                transitions. You can modify any of this with custom CSS or overriding our default
+                                variables. It's also worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
-
+        <nav class="navbar navbar-expand-lg">
+            <div class="container container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="src/images/logo.svg" alt="B.Cards" width="140" height="62.26">
+                </a>
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#second-section">Как выглядит процесс</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#third-section">Почему мы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#fifth-section">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="contact-btn tg-btn" href="#">
+                    <button class="btn">
+                        <div class="icon"></div>
+                    </button>
+                </a>
+                <a class="contact-btn inst-btn" href="#">
+                    <button class="btn">
+                        <div class="icon"></div>
+                    </button>
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar two navbar-expand-lg">
+            <div class="container container-fluid">
+                <p class="copyright-text">
+                    © 2023 <br>
+                    Все данные защищены
+                </p>
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Политика конфиденциальности</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="plug"></div>
+            </div>
+        </nav>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+    <script src="src/scripts/script.js"></script>
 </body>
 
 </html>
