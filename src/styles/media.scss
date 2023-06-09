@@ -626,6 +626,13 @@
                 .container {
                     margin-top: -270px;
 
+                    .bg-block {
+                        width: 992px;
+                        left: -140px;
+                        height: 105%;
+                        background: url(../images/fifth-section-bg-mobile.svg) no-repeat top left / cover;
+                    }
+
                     .content-title {
                         .title {
                             span {
