@@ -306,6 +306,32 @@
 
 @media (max-width: 992px) {
     body {
+        .background-elipses {
+
+            .el1,
+            .el2,
+            .el3,
+            .el4,
+            .el5,
+            .el6,
+            .el7,
+            .el10,
+            .el11 {
+                display: none;
+            }
+
+            .el8 {
+                right: -150px;
+                top: 9640px;
+            }
+
+            .el9 {
+                left: -170px;
+                top: 7570px;
+                width: 150px;
+            }
+        }
+
         .header {
             .navbar {
                 .container {
@@ -642,7 +668,19 @@
 
 @media (max-width: 768px) {
     body {
-        .header {}
+        .background-elipses {
+
+            .el8 {
+                right: -110px;
+                top: 8030px;
+            }
+
+            .el9 {
+                left: -120px;
+                top: 6400px;
+                width: 140px;
+            }
+        }
 
         .main {
             .first-section {
@@ -830,7 +868,5 @@
                 }
             }
         }
-
-        .footer {}
     }
 }
