@@ -1066,16 +1066,13 @@
                     .block-content {
                         .block.block-show.show {
                             .line.block-show.show {
-                                height: 24vw;
-                                top: -42vw;
-                                margin-bottom: -26vw;
                                 display: none;
                             }
 
                             .block-container.block-show.show {
                                 width: 80vw;
                                 height: 100vw;
-                                margin: -14px auto 30px auto;
+                                margin: -12px auto 30px auto;
                             }
                         }
 
@@ -1093,6 +1090,7 @@
                                     background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
                                 }
                             }
+
                             .block-circles {
                                 position: relative;
                                 z-index: 1;
@@ -1140,7 +1138,7 @@
                 padding-top: 30px;
 
                 .container {
-                    height: 1004px;
+                    height: 240vw;
 
                     .bg-elipses-adapt {
                         .el9 {
@@ -1155,15 +1153,16 @@
                     }
 
                     .bg-block {
-                        height: 954px;
+                        height: 218vw;
                     }
 
                     .content-title {
                         padding-top: 28px;
+                        padding-bottom: 4vw;
 
                         .title {
                             span {
-                                font-size: 38px;
+                                font-size: 12vw;
                             }
                         }
                     }
@@ -1171,17 +1170,19 @@
                     .block-content {
                         .block {
                             img {
-                                width: 180px;
-                                margin-left: -40px;
+                                width: 40vw;
+                                margin-left: -4vw;
                             }
 
                             .block-text {
+                                margin-left: -8vw;
+
                                 .title {
-                                    font-size: 12px;
+                                    font-size: 4vw;
                                 }
 
                                 .subtitle {
-                                    font-size: 8px;
+                                    font-size: 2.6vw;
 
                                     p {
                                         margin-bottom: 0.4rem;
@@ -1200,11 +1201,11 @@
                 .container {
                     .container-content {
                         .content-title {
-                            font-size: 36px;
+                            font-size: 10vw;
                         }
 
                         .content-subtitle {
-                            font-size: 18px;
+                            font-size: 5.4vw;
                         }
 
                         a {
@@ -1244,6 +1245,7 @@
 
                     .accordion {
                         margin-top: 20px;
+                        --bs-accordion-btn-icon-width: 3.4vw;
 
                         .accordion-item {
                             margin-bottom: 20px;
@@ -1252,8 +1254,8 @@
 
                             .accordion-header {
                                 span {
-                                    font-size: 10px;
-                                    padding-right: 10px;
+                                    font-size: 3vw;
+                                    padding-right: 8px;
 
                                     br {
                                         display: none;
@@ -1278,17 +1280,20 @@
                     .btn-up-block {
                         padding-bottom: 160px;
 
-                        .btn-up .btn {
-                            height: 46px;
-                            width: 174px;
+                        .btn-up {
+                            text-decoration: none;
+                            .btn {
+                                height: 46px;
+                                width: 174px;
 
-                            span {
-                                font-size: 16px;
-                                margin-right: 6px;
-                            }
+                                span {
+                                    font-size: 16px;
+                                    margin-right: 6px;
+                                }
 
-                            svg {
-                                width: 16px;
+                                svg {
+                                    width: 16px;
+                                }
                             }
                         }
                     }
