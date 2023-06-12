@@ -1066,9 +1066,9 @@
                     .block-content {
                         .block.block-show.show {
                             .line.block-show.show {
-                                height: 100px;
-                                top: -168px;
-                                margin-bottom: -110px;
+                                height: 24vw;
+                                top: -42vw;
+                                margin-bottom: -26vw;
                             }
 
                             .block-container.block-show.show {
@@ -1084,6 +1084,7 @@
                                 height: 60vw;
 
                                 .block-number {
+                                    line-height: 100%;
                                     font-size: 100px;
                                 }
                             }
