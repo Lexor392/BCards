@@ -972,6 +972,8 @@
     body {
         .header {
             .navbar {
+                --bs-navbar-padding-y: 0.5rem;
+
                 .container {
                     .navbar-toggler {
                         .navbar-toggler-icon {
@@ -993,32 +995,35 @@
             .first-section {
                 .container {
                     .bg-block {
-                        height: 848px;
+                        // height: 848px;
+                        height: 214vw;
                     }
 
                     .container-content {
+                        padding-top: 40vw;
+
                         .content-title {
-                            font-size: 32px;
+                            font-size: 10vw;
                         }
 
                         .content-subtitle {
                             .marker {
-                                margin-top: 6px;
+                                margin-top: 2.4vw;
                             }
 
                             .subtitle {
-                                font-size: 16px;
+                                font-size: 5vw;
                             }
                         }
 
                         .content-btn {
                             .btn {
-                                width: 200px;
-                                height: 50px;
-                                border-radius: 10px;
+                                width: 60vw;
+                                height: 14vw;
+                                border-radius: 2.6vw;
 
                                 span {
-                                    font-size: 16px;
+                                    font-size: 6vw;
                                 }
 
                                 .arrow-icon {
@@ -1035,42 +1040,57 @@
                             }
                         }
                     }
+
+                    .container-img {
+                        top: 0;
+                    }
                 }
             }
 
             .second-section {
+                margin-top: 20vw;
+
                 .container {
                     .content-title {
                         .title {
                             span {
-                                font-size: 40px;
+                                font-size: 12vw;
                             }
                         }
 
                         .subtitle {
-                            font-size: 12px;
+                            font-size: 4vw;
                         }
                     }
 
                     .block-content {
+                        .block.block-show.show {
+                            .line.block-show.show {
+                                height: 100px;
+                                top: -168px;
+                                margin-bottom: -110px;
+                            }
+
+                            .block-container.block-show.show {
+                                width: 80vw;
+                                height: 100vw;
+                                margin: -14px auto 30px auto;
+                            }
+                        }
+
                         .block {
                             .block-circles {
-                                width: 240px;
-                                height: 240px;
+                                width: 60vw;
+                                height: 60vw;
 
                                 .block-number {
                                     font-size: 100px;
                                 }
                             }
 
-                            .line {
-                                height: 90px;
-                                top: -160px;
-                            }
-
                             .circle {
-                                width: 28px;
-                                height: 28px;
+                                width: 8vw;
+                                height: 8vw;
                             }
 
                             .block-container {
@@ -1078,15 +1098,19 @@
 
                                 .block-text {
                                     padding: 32px 20px;
-                                    height: 440px;
+                                    height: 100%;
 
                                     .block-title {
-                                        font-size: 34px;
+                                        font-size: 9vw;
                                     }
 
                                     .block-subtitle {
-                                        font-size: 20px;
-                                        margin-top: 18px;
+                                        font-size: 5.2vw;
+                                        margin-top: 3vw;
+
+                                        br {
+                                            display: none;
+                                        }
                                     }
                                 }
                             }
