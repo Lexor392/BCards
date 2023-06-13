@@ -80,3 +80,8 @@ $(window).scroll(function () {
   }
 });
 
+$(document).ready(function() {
+  $('.nav-link').click(function() {
+    $('#offcanvasNavbar').offcanvas('hide'); // Закрываем offcanvas при клике на ссылку
+  });
+});

@@ -81,29 +81,35 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="src/images/logo.svg" alt="B.Cards" width="140" height="62.26">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item item-anim">
-                            <a class="nav-link" href="#second-section">Как выглядит процесс</a>
-                        </li>
-                        <li class="nav-item item-anim">
-                            <a class="nav-link" href="#third-section">Почему мы</a>
-                        </li>
-                        <li class="nav-item item-anim">
-                            <a class="nav-link" href="#fifth-section">FAQ</a>
-                        </li>
-                    </ul>
-                    <a class="tel-btn item-anim" href="tel:+380999999999">
-                        <button class="btn">
-                            <span>Консультация</span>
-                            <div class="telephone-icon"></div>
-                        </button>
-                    </a>
+                <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header container">
+                        <img src="src/images/logo-menu.svg" alt="B.Cards" width="140" height="62.26">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item item-anim">
+                                <a class="nav-link" href="#second-section">Как выглядит процесс</a>
+                            </li>
+                            <li class="nav-item item-anim">
+                                <a class="nav-link" href="#third-section">Почему мы</a>
+                            </li>
+                            <li class="nav-item item-anim">
+                                <a class="nav-link" href="#fifth-section">FAQ</a>
+                            </li>
+                        </ul>
+                        <a class="tel-btn item-anim" href="tel:+380999999999">
+                            <button class="btn">
+                                <span>Консультация</span>
+                                <div class="telephone-icon"></div>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
         </nav>

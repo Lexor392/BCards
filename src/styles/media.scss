@@ -132,7 +132,7 @@
         .header {
             .navbar {
                 .container {
-                    .collapse {
+                    offcanvas {
                         .navbar-nav {
                             .nav-item {
                                 .nav-link {
@@ -406,6 +406,30 @@
 
                     .navbar-toggler:focus {
                         box-shadow: none;
+                    }
+
+                    .offcanvas {
+                        .offcanvas-body {
+                            .navbar-nav {
+                                .nav-item {
+                                    margin-top: 25px;
+                                    .nav-link {
+                                        font-family: 'Neue Machina';
+                                        font-style: normal;
+                                        font-weight: 800;
+                                        font-size: 21px;
+                                        line-height: 124.5%;
+                                        text-align: center;
+                                        letter-spacing: 0.06em;
+                                        background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                                        -webkit-background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                        background-clip: text;
+                                        text-fill-color: transparent;
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -1023,7 +1047,7 @@
                                 border-radius: 2.6vw;
 
                                 span {
-                                    font-size: 6vw;
+                                    font-size: 4.4vw;
                                 }
 
                                 .arrow-icon {
@@ -1282,6 +1306,7 @@
 
                         .btn-up {
                             text-decoration: none;
+
                             .btn {
                                 height: 46px;
                                 width: 174px;

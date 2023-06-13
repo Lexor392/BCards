@@ -84,7 +84,19 @@ body {
             --bs-navbar-padding-y: 2.5rem;
 
             .container {
-                .collapse {
+                .offcanvas {
+                    --bs-offcanvas-width: 100%;
+                    --bs-offcanvas-height: 100%;
+
+                    .offcanvas-header {
+                        padding: var(--bs-navbar-padding-y) var(--bs-offcanvas-padding-x);
+                        margin: 16px 0;
+
+                        .btn-close {
+                            background: url(../images/icons/btn-close.svg) no-repeat center / cover;
+                            margin-right: 0;
+                        }
+                    }
                     .navbar-nav {
                         margin-left: 56px;
 
