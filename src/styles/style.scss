@@ -97,87 +97,135 @@ body {
                             margin-right: 0;
                         }
                     }
-                    .navbar-nav {
-                        margin-left: 56px;
 
-                        .nav-item {
-                            margin-right: 50px;
+                    .offcanvas-body {
+                        .navbar-nav {
+                            margin-left: 56px;
 
-                            .nav-link {
-                                font-family: 'Gilroy';
-                                font-style: normal;
-                                font-weight: 500;
-                                font-size: 19px;
-                                line-height: 150%;
-                                color: #FFFFFF;
+                            .nav-item {
+                                margin-right: 50px;
+
+                                .nav-link {
+                                    font-family: 'Gilroy';
+                                    font-style: normal;
+                                    font-weight: 500;
+                                    font-size: 19px;
+                                    line-height: 150%;
+                                    color: #FFFFFF;
+                                }
                             }
                         }
                     }
 
-                    .tel-btn {
-                        text-decoration: none;
-                        padding: 3px;
-                        border-radius: 30px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        transition: all 0.3s;
-                        background: linear-gradient(93.3deg, #7C00FF 1.05%, #B200FF 98.66%);
-
-                        .btn {
-                            width: 259.1px;
-                            height: 61.27px;
-                            border-radius: 27px;
-                            border: none;
-                            background-color: #FFFFFF;
+                    .offcanvas-footer {
+                        .tel-btn {
+                            text-decoration: none;
+                            padding: 3px;
+                            border-radius: 30px;
                             display: flex;
                             justify-content: center;
                             align-items: center;
                             transition: all 0.3s;
+                            background: linear-gradient(93.3deg, #7C00FF 1.05%, #B200FF 98.66%);
+                            width: max-content;
+                            margin: 0 auto;
 
-                            span {
-                                font-family: 'Neue Machina';
-                                font-style: normal;
-                                font-weight: 700;
-                                font-size: 19px;
-                                line-height: 150%;
-                                text-align: center;
-                                background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                background-clip: text;
-                                text-fill-color: transparent;
-                                margin-right: 12px;
+                            .btn {
+                                width: 259.1px;
+                                height: 61.27px;
+                                border-radius: 27px;
+                                border: none;
+                                background-color: #FFFFFF;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
                                 transition: all 0.3s;
-                            }
 
-                            .telephone-icon {
-                                width: 22px;
-                                height: 22px;
-                                transition: all 0.3s;
-                                background: url(../images/icons/telephone-icon.svg) no-repeat left top;
+                                span {
+                                    font-family: 'Neue Machina';
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 19px;
+                                    line-height: 150%;
+                                    text-align: center;
+                                    background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                    margin-right: 12px;
+                                    transition: all 0.3s;
+                                }
+
+                                .telephone-icon {
+                                    width: 22px;
+                                    height: 22px;
+                                    transition: all 0.3s;
+                                    background: url(../images/icons/telephone-icon.svg) no-repeat left top;
+                                }
                             }
                         }
-                    }
 
-                    .tel-btn:hover {
-                        .btn {
-                            border-radius: 30px;
-                            background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                        .tel-btn:hover {
+                            .btn {
+                                border-radius: 30px;
+                                background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
 
-                            span {
-                                background: linear-gradient(266.09deg, #ffffff -4.3%, #ffffff 108.23%);
-                                -webkit-background-clip: text;
-                                -webkit-text-fill-color: transparent;
-                                background-clip: text;
-                                text-fill-color: transparent;
+                                span {
+                                    background: linear-gradient(266.09deg, #ffffff -4.3%, #ffffff 108.23%);
+                                    -webkit-background-clip: text;
+                                    -webkit-text-fill-color: transparent;
+                                    background-clip: text;
+                                    text-fill-color: transparent;
+                                }
+
+                                .telephone-icon {
+                                    width: 22px;
+                                    height: 22px;
+                                    transform: rotate(-90deg);
+                                    background: url(../images/icons/telephone-icon-hover.svg) no-repeat left top;
+                                }
                             }
+                        }
 
-                            .telephone-icon {
-                                width: 22px;
-                                height: 22px;
-                                transform: rotate(-90deg);
-                                background: url(../images/icons/telephone-icon-hover.svg) no-repeat left top;
+                        .block-contacts {
+                            justify-content: center;
+                            margin-top: 26px;
+                            padding-bottom: 26px;
+                            display: none;
+
+                            .contact-btn {
+                                width: max-content;
+                                background: linear-gradient(266.09deg, #BD00FF -4.3%, #7000FF 108.23%);
+                                border-radius: 100%;
+                                margin: 10px;
+                                transition: all 0.3s;
+                                .btn {
+                                    margin: 1px;
+                                    height: 38px;
+                                    width: 38px;
+                                    border-radius: 100%;
+                                }
+                            }
+                            .tg-btn {
+                                .btn {
+                                    background: url(../images/icons/dark-telegram-icon.svg) no-repeat 46% center / 50%, #fff;
+                                }
+                            }
+                            .inst-btn {
+                                .btn {
+                                    background: url(../images/icons/dark-instagram-icon.svg) no-repeat center / 50%, #fff;
+                                }
+                            }
+                            .tg-btn:hover {
+                                .btn {
+                                    background: url(../images/icons/telegram-icon-hover.svg) no-repeat 46% center / 50%;
+                                }
+                            }
+                            .inst-btn:hover {
+                                .btn {
+                                    background: url(../images/icons/dark-instagram-icon.svg) no-repeat center / 50%;
+                                }
                             }
                         }
                     }
@@ -542,6 +590,7 @@ body {
                     height: 892.42px;
                     background: url(../images/third-section-bg.png) no-repeat left top;
                 }
+
                 .bg-elipses-adapt {
                     display: none;
                 }
@@ -880,8 +929,9 @@ body {
                                 -webkit-text-fill-color: transparent;
                                 background-clip: text;
                                 text-fill-color: transparent;
-                                
+
                             }
+
                             .stop1 {
                                 stop-color: #ffffff;
                             }

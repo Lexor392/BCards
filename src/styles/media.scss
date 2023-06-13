@@ -1,5 +1,15 @@
 @media (min-width: 992px) {
     body {
+        .header {
+            .navbar {
+                .container {
+                    .offcanvas {
+                        display: contents;
+                    }
+                }
+            }
+        }
+
         .main {
             .first-section {
                 .container {
@@ -411,13 +421,16 @@
                     .offcanvas {
                         .offcanvas-body {
                             .navbar-nav {
+                                margin: 0;
+
                                 .nav-item {
-                                    margin-top: 25px;
+                                    margin: 2vh 0;
+
                                     .nav-link {
                                         font-family: 'Neue Machina';
                                         font-style: normal;
                                         font-weight: 800;
-                                        font-size: 21px;
+                                        font-size: 6vw;
                                         line-height: 124.5%;
                                         text-align: center;
                                         letter-spacing: 0.06em;
@@ -428,6 +441,16 @@
                                         text-fill-color: transparent;
                                     }
                                 }
+                            }
+                        }
+
+                        .offcanvas-footer {
+                            .tel-btn {
+                                width: max-content;
+                                margin: 0 auto;
+                            }
+                            .block-contacts {
+                                display: flex;
                             }
                         }
                     }
