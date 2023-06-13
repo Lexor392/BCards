@@ -449,6 +449,7 @@
                                 width: max-content;
                                 margin: 0 auto;
                             }
+
                             .block-contacts {
                                 display: flex;
                             }
@@ -814,6 +815,13 @@
 
                     .copyright-text {
                         margin-bottom: 0;
+                    }
+
+                    .tg-btn:hover,
+                    .inst-btn:hover {
+                        .btn {
+                            background-size: 50%;
+                        }
                     }
 
                     .tg-btn {
